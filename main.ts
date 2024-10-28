@@ -1,6 +1,6 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
-    pizza.setPosition(randint(0, scene.screenWidth()), randint(0, scene.screenHeight()))
+    pizza.setPosition(randint(10, scene.screenWidth()), randint(10, scene.screenHeight()))
     info.startCountdown(5)
 })
 let pizza: Sprite = null
